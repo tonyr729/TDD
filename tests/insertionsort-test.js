@@ -65,4 +65,12 @@ describe('insertionSort', function() {
 
     assert.deepEqual(newArray, [['bat', 'apple'], ['cat', 'bear']]);
   });
+
+  it('should sort a large array', function() {
+    var array = arrayGenerator(1000);
+
+    let newArray = mergeSort(array);
+
+    assert.isAtLeast(newArray[4], newArray[3]);
+  });
 });
