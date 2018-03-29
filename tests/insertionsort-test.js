@@ -69,7 +69,7 @@ describe('insertionSort', function() {
   it('should sort a large array', function() {
     var array = arrayGenerator(1000);
 
-    let newArray = mergeSort(array);
+    let newArray = insertionSort(array);
 
     assert.isAtLeast(newArray[4], newArray[3]);
   });
